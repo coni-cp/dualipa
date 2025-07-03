@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radical Pop</title>
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script:wght@400;700&family=Truculenta:opsz,wght@12..72,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--carrusel-->
+    <link rel="stylesheet"  href="assets/js/plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/js/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/scss/mi-estilo.css">
+</head>
+<body>
+      <header class="sticky-top">
+        <nav class="navbar navbar-expand-xl ">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">Radical Pop</a>
+                <!-- Botón para abrir el offcanvas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Offcanvas -->
+                <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" >
+                         <ul class="navbar-nav  pe-3 text-start">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="biografia.html">Biografía</a>
+                            </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" href="discografia.html">Discografía</a>
+                            </li>
+                           
+                            <li class="nav-item">
+                                <a class="nav-link" href="conciertos.html">Conciertos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Store</a>
+                            </li>
+                        </ul>
+        
+                        <div class="d-flex iconos gap-3">
+                            <form class="d-flex position-relative" role="search" style="width: 250px;">
+                                <input class="form-control pe-5" type="search" placeholder="Buscar" aria-label="Buscar">
+                                <span class="position-absolute top-50 end-0 translate-middle-y pe-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gray"
+                                    class="bi bi-search-heart" viewBox="0 0 16 16">
+                                    <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018" />
+                                    <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11" />
+                                </svg>
+                                </span>
+                            </form>
+                            <!-- Ícono de carrito-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="gray" class="bi bi-cart2 mt-1" viewBox="0 0 16 16">
+                                <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                            </svg>
+                        </div>
+                </div><!--fin offcanvas-body-->
+            </div><!--fin container-->
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row goback">
+                <a href="#" onclick="window.history.back()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#C74385" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                    </svg> Volver a Discografia</a>
+            </div>
+       </div>
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center nostalgia mt-5">Future Nostalgia</h2>
+            </div>
+        </div>
+       
+         <div class="container  mb-5">
+            <div class="row align-items-center">
+                 <div class="col-md-6 img-portada-disco">
+                     <div class="swiper cuboDisco">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/future-nostalgia2.webp" class="img-cubo ">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/nostalgia-2.webp" class="img-cubo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/nostalgia-3.webp" class="img-cubo">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="nostalgia">Listado de canciones</h3>
+                    <ol>
+                        <li>Future nostalgia</li>
+                        <li>Cool</li>
+                        <li>Levitating</li>
+                        <li>Hallucinate</li>
+                        <li>Break my heart</li>
+                        <li>Boy will be boys</li>
+                        <li>Don't start now</li>
+                        <li>Physical</li>
+                        <li>Pretty please</li>
+                        <li>Love again</li>
+                        <li>Good in bed</li>
+                        <li>Fever</li>
+                    </ol>
+                </div>
+
+        <div class="container discos mb-5">
+            <div class="row align-items-center">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0JeyP8r2hBxYIoxXv11XiX?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 d-flex align-items-center">
+                    <a href="index.html" class="logo-footer">Radical Pop</a>
+                </div>  
+                <div class="col-md-3 mb-4">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Biografía</a></li>
+                        <li><a href="#">Discografía</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 ">
+                    <ul>
+                        <li><a href="#">Conciertos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-center gap-3 ">
+                    <a href="https://www.instagram.com/dualipa"><img src="assets/img/insta.png" style="height: 30px; width: 30px;" ></a>
+                    <a href="https://www.tiktok.com/@dualipaofficial"><img src="assets/img/tiktok.png" style="height: 30px; width: 30px;" ></a>
+                    <a href="https://x.com/dualipa"><img src="assets/img/x-icon.png" style="height: 30px; width: 30px;" ></a>
+                    <a href="https://www.youtube.com/@dualipa"><img src="assets/img/youtube.png" style="height: 30px; width: 30px;" ></a>   
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!--query-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!--dataTable-->
+     <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+        <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <!--carrusel-->
+    <script src="assets/js/plugin/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+ 
+   
+    <script src="assets/js/script.js"></script>                    
+ </body>
+</html>

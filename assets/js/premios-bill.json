@@ -1,0 +1,15 @@
+{
+    "premios":[
+          {
+            "premio": {
+                "nombre4": "Brit Awards (Reino Unido)",
+                "premiob1": "Top Dance/Electronic Song (2024) → Houdini",
+                "premiob2": "Top Visual Pop Era(2024)→ Radical Optimism",
+                "premiob3": "Top Dance/Electronic Song (2021) → Don’t Start Now",
+                "imagen":"./assets/img/dua-bill.webp",
+                "logo4":"./assets/img/billboard_logo.png"
+            }
+        }
+            
+    ]
+}

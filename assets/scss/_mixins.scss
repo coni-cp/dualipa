@@ -1,0 +1,51 @@
+@mixin boton{
+    background-color: $color-botones;
+    color: $header-blanco;
+    font-family: $fuente-todo;
+    font-size: 18px;
+    padding: 8px 36px;
+    box-shadow: 0px 4px 15px #E6007E;
+    border: none;
+}
+@mixin tarjeta{
+    background-color: $header-blanco;
+    width: 320px;
+    height: 460px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
+}
+@mixin tarjeta-eventos{
+    font-family: $fuente-todo;
+    background-color: $header-blanco;
+     span{
+        font-size: 28px;
+        font-weight: 600;
+        margin: 10px;
+    }
+    p{
+        padding-top: 10px;
+        color: $color-titulos;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000000;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+    }
+   
+}
+@mixin tarjeta-noticias{
+    background-color: $header-blanco;
+    width: 350px;
+    height: 350px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30)
+
+}

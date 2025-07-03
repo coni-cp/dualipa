@@ -1,0 +1,15 @@
+{
+    "premios":[
+          {
+            "premio": {
+                "nombre2": "Brit Awards (Reino Unido)",
+                "premioB1": "Artista Femenina Británica del Año (2018 y 2021)",
+                "premioB2": "Mejor Álbum Británico (2021) – Future Nostalgia",
+                "premioB3": "Artista del Año (2021)",
+                "imagen":"./assets/img/dua-brit.webp",
+                "logo2":"./assets/img/brit_logo.png"
+            }
+        }
+            
+    ]
+}

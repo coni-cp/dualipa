@@ -1,0 +1,52 @@
+//FUENTES
+$logo: "Oleo Script", system-ui;
+$landing: "Bebas Neue", sans-serif;
+$fuente-titulos:"Truculenta", sans-serif;
+$fuente-todo: "Work Sans", sans-serif;
+
+//COLORES
+$color-parrafo:#0000;
+$color-botones:#C74385;
+$color-titulos:#AB236A;
+$color-footer:#0E0E0E;
+$header-blanco:#fff;
+$fondo-page:#F5F6F4;
+$detalles-rosados:#FF9CEC;
+//colores discografia
+$dualipa:#FF2DCB;   
+$futureNostalgia:#0C04FD;
+$radicalOptimusm:#07C0D2;
+
+//tamaño letra
+$encabezado-page:80px;
+$titulos:40px;
+$parrafo:24px;
+$boton:18px;
+$link-footer:16px;
+
+body{
+    h1{
+        font-family: $fuente-titulos;
+        font-size: 100px;
+        color: $header-blanco;
+    }
+    h2{
+        font-family:$fuente-titulos;
+        font-size: 60px;
+        color: $color-titulos;
+        text-transform: uppercase;
+    }
+    h3{
+        color: $color-titulos;
+        font-family: $fuente-todo;
+        font-weight: 600;
+        font-size: 36px;
+        
+    }
+    p{
+        font-family: $fuente-todo;
+        font-size: 20px;
+    }
+
+}
+

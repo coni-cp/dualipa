@@ -1,0 +1,495 @@
+
+body{
+    background-color: $fondo-page;
+}
+
+//header y footer
+.logo{
+    text-align: center;
+    font-family:$logo;
+    color: #000000;
+    font-size: 40px;
+    text-decoration: none;
+    margin-right: 100px;
+}
+.iconos{
+    padding-left: 50px;  
+}
+header{
+    background-color: $header-blanco;
+    padding: 5px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.nav-item{
+    .active{
+        color:$color-botones !important;
+        font-weight: 500;
+        text-shadow: 0px 3px 3px $detalles-rosados;
+    }
+}
+.nav-item{
+    font-family:$fuente-todo;
+    font-size: 18px; 
+    margin-right: 8px;
+    text-align: start;
+}
+.dropdown-menu{
+    background-color: $header-blanco;
+    .dropdown-item{
+        background-color: #ffffff;
+    }
+    .dropdown-item:hover{
+        background-color:#fce1f6;
+    }
+}
+.offcanvas-header .btn-close {
+    margin-left:0;
+}
+
+
+footer{
+    height: auto;
+    padding-top: 20px;
+    background-color: $color-footer;
+    color: $header-blanco;
+    
+    ul{
+        margin-top: 10px;
+        list-style: none;
+        li{
+            margin-bottom: 10px;
+            a{
+                text-decoration: none;
+                color: $header-blanco;
+            }
+        }
+        
+    }
+    .logo-footer{
+        font-size: 40px;
+        color: $header-blanco;
+        font-family: $logo;
+        text-decoration: none;
+    
+    }
+    .iconos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+//banner
+.banner{
+    height: 480px;
+    background: url(../img/glitter.gif) 50% 0 ;
+    img{
+        margin-left:-10px;
+        width: 675px;
+        height: 480px;
+        object-fit: cover;
+    }
+    span{
+        font-family:$landing;
+        font-size: 50px;
+        color: #FF3CAC;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .texto-banner{
+        display: flex;
+        flex-direction: column;     
+        justify-content: center;     
+        align-items: center;         
+        text-align: center;      
+    }
+    
+}
+.btn{
+     margin-top: 10px;
+    @include boton;
+}
+.btn:hover{
+    background-color: $color-titulos;
+    color: $header-blanco;
+}
+
+//vinilo y playlist
+.vinilo {
+  position: relative;
+  height: 400px;
+
+  .vinyl {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    width: 340px;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .album {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 340px;
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+@media (max-width: 768px) {
+  .vinilo {
+    height: 300px;
+
+    .vinyl,
+    .album {
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .vinilo {
+    height: 220px;
+
+    .vinyl,
+    .album {
+      width: 180px;
+    }
+  }
+}
+
+
+//eventos home
+.proximos-eventos{
+    display: flex;
+    .tarjeta-eventos-home{
+        @include tarjeta-eventos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $detalles-rosados;
+        text-align: center;
+        padding: 8px;
+        max-width:250px;
+        margin-bottom: 30px;
+        p{
+            text-transform: uppercase;
+        }
+    }
+    .fechas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+    .fechas:hover{
+        background-color:$color-footer;
+        a{
+            color: $header-blanco;
+        }
+        
+    }
+
+
+}
+
+//tienda home
+.tarjeta{
+    @include tarjeta;
+}
+.tarjeta:hover{
+     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.owl-dots{
+    .owl-dot{
+        background: #FF3CAC !important;
+    }
+    
+}
+
+//biografia 
+.biografia{
+    margin-top: 30px;
+    span{
+        text-align: center;
+        font-family:$landing;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .bio-dua{
+        height:auto;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    .origenes{
+        margin-bottom: 30px;
+    }
+}
+.premios{
+    display: flex;
+    margin-bottom: 60px;
+    img{
+        width: 210px;
+        height: 84px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    .card-premios{
+        margin-top: 10px;
+        padding-top: 10px;
+        background-color: $header-blanco;
+        border: 1px solid $detalles-rosados;
+        ul li::marker {
+        color: $color-botones; 
+        }
+
+        ul{
+           li{
+            margin-bottom: 5px;
+           }
+        }
+    }
+}
+.modal-body{
+    p{
+        font-family: $fuente-todo;
+        font-size: 16px;
+    }
+}
+//swiper bio
+ .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.swiper-pagination{
+    border: #030409;
+}
+.swiper-pagination-bullet-active {
+    background: $color-botones;
+}
+//discografia
+.discos{
+    margin-top: 50px;
+    .portada-dualipa{
+        height: auto;
+        width: 90%;
+        object-fit: cover;
+        border: 1px solid $dualipa;
+        box-shadow: 0 4px 15px 20px rgba(255, 45, 203, 0.25);
+    }
+    .portada-dualipa:hover{
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1.1)
+    }
+    .portada-future{
+        height: auto;
+        width: 90%;
+        object-fit: cover;
+        border: 1px solid $futureNostalgia;
+        box-shadow: 0 4px 15px 20px rgba(12, 4, 253, 0.25);
+    }
+    .portada-future:hover{
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1.1)
+    }
+    .portada-radical{
+        height: auto;
+        width: 90%;
+        object-fit: cover;
+        border: 1px solid $radicalOptimusm;
+        box-shadow: 0 4px 15px 20px rgba(0, 172, 192, 0.25);
+    }
+    .portada-radical:hover{
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1.1)
+    }
+}
+//discos
+.radical{
+    color:#00ACC0;
+}
+.duaLipa{
+    color:$color-botones;
+}
+.nostalgia{
+    color:#34309b;
+}
+.img-cubo{
+    height: 500px;
+    width: 100%;
+    object-fit: fill;
+
+}
+
+//conciertos
+.tarjeta-evento{
+    @include tarjeta-eventos;
+    td{
+        background-color: #ffffff;
+    }
+}
+.titulo-tabla{
+    th{
+    background-color:$color-botones;
+    color: white;
+    }
+} 
+div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-start {
+    display: none;
+}
+
+.carousel-item{
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+}
+//blog - noticias
+.toast-body{
+    img{
+        width: 320px;
+        height: 200px;
+        object-fit: cover;
+    }
+    p{
+        font-size: 16px ;
+    }
+    a{
+        font-size: 20px;
+        color:$color-titulos;
+        text-decoration: none;
+    }
+}
+ .img-noticia{
+        img{
+            width: 100%;
+        }
+  }
+
+.seccion-noticias{
+    margin-top: 50px;
+    display: flex;
+    .tarjeta-noticia{
+        @include tarjeta-noticias;
+        img{
+            object-fit: cover;
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: $color-titulos;
+        }
+    }
+}
+.goback{
+    margin-top: 20px;
+    a{
+        text-decoration: none;
+        color: $color-botones;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .owl-carousel{
+        display: flex;
+        justify-content: center;
+    }
+    
+     .banner{
+        height: 400x;
+        img{
+            display: none;
+        }
+        span{
+            font-size: 40px;
+        }
+        .texto-banner{
+          
+            width: 100%;
+        }
+    }
+    .vinilo{
+        display: none;
+    }
+   .proximos-eventos, .seccion-noticias{
+        justify-content: center;
+    }
+    .tarjeta-evento{
+        span{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+    .discos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .row{
+            margin-bottom: 60px;
+        }
+        img{
+            margin-bottom: 15px;
+        }
+        .productos-index{
+            display: flex;
+            justify-content: center;
+        }
+}
+   
+}
+@media only screen and (max-width: 549px){
+    h3{     
+        font-size: 28px !important;
+        font-weight: 500;      
+    }
+    p{
+      
+        font-size: 16px !important;
+    }
+    .premio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .productos-index{
+        display: flex;
+        justify-content: center;
+    }
+   
+} 

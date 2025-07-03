@@ -1,0 +1,15 @@
+{
+    "premios":[
+          {
+            "premio": {
+                "nombre3": "MTV Europe Music Awards (EMAs)",
+                "premioM1": "Mejor Artista Pop (2020)",
+                "premioM2": "Mejor Artista del Reino Unido e Irlanda",
+                "premioM3": "Mejor Look ",
+                "imagen": "./assets/img/dua-mtv.webp",
+                "logo3":"./assets/img/mtv_logo.png"
+            }
+        }
+            
+    ]
+}

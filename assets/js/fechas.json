@@ -1,0 +1,47 @@
+{
+    "conciertos":[
+       
+         {
+            "fechas": {
+                "fecha": "27 JUN",
+                "lugar": "Aviva stadium - dublin, ireland",
+                "ciudad":"Dublin",
+                "entradas": "https://www.ticketmaster.ie/artist/2179476",
+                "hora":"19.00hrs",
+                "img":"./assets/img/dua-evento2.webp"
+            }
+        },
+         {
+            "fechas": {
+                "fecha": "01 AGOS",
+                "lugar": "Sunny hill festival - prishtinë, kosovë",
+                "ciudad":"Prishtinë",
+                "entradas": "https://ticketing.festtix.co.uk/events/sunny-hill-festival-2025",
+                "hora":"19.00hrs",
+                "img":"./assets/img/dua-evento2.webp"
+            }
+        },
+         {
+            "fechas": {
+                "fecha": "01 SEPT",
+                "lugar": "Scotiabank arena - toronto, on",
+                "ciudad":"Toronto",
+                "entradas": "https://www.ticketmaster.ca/event/10006125934B26F4",
+                "hora":"19.00hrs",
+                "img":"./assets/img/dua-evento2.webp"
+            }
+        },
+         {
+            "fechas": {
+                "fecha": "02 SEPT",
+                "lugar": "Scotiabank arena - toronto, on",
+                "ciudad":"Toronto",
+                "entradas": "https://www.ticketmaster.ca/event/10006125934B26F4",
+                "hora":"19.00hrs",
+                "img":"./assets/img/dua-evento2.webp"
+                
+            }
+        }
+       
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "premios":[
+        {
+            "premio": {
+                "nombre1": "Grammy Awards",
+                "premioG1": "Mejor Artista Nueva (2019)",
+                "premioG2": "Mejor Grabación Dance (2019) → Electricity (con Silk City)",
+                "premioG3": "Mejor Álbum Pop Vocal (2021) →  Future Nostalgia",
+                "imagen":"./assets/img/awards.jpg",
+                "logo1":"./assets/img/grammy_logo.png"
+            }
+        }      
+    ]
+}
